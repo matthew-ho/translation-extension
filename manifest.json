@@ -1,0 +1,11 @@
+{
+  "name": "TranslationScatter",
+  "version": "1.0",
+  "description": "Translates specific words in a page",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+	"content_scripts": [{
+    "js": ["translate.js"],
+    "matches": ["https://www.bbc.co.uk/*"]
+  }],
+  "manifest_version": 2
+}
