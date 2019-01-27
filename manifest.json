@@ -5,6 +5,7 @@
   "permissions": ["activeTab", "declarativeContent", "storage"],
   "options_page": "vocabularyLevel.html",
 	"content_scripts": [{
+		"css": ["openWindow.css"],
     "js": ["translations.js", "findAndReplaceDOMText.js", "translate.js", "openWindow.js"],
     "matches": ["<all_urls>"]
   }],

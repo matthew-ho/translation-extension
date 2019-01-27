@@ -1,0 +1,9 @@
+translationWindow {
+	position: absolute;
+  margin-top: 3px;
+  z-index: 2147483647 !important;
+	overflow: visible;
+  min-width: 180px !important;
+  margin-left: -16px !important;
+	background-color: white;
+}
