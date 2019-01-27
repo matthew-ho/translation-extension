@@ -1,6 +1,6 @@
-cat Book3.csv|while IFS=, read -r col1 col2
+cat Book6.csv|while IFS=, read -r col1 col2
 do
-  FOO="\"$col2\": \"$col1\","
+  FOO="\"$col1\": \"$col2\","
   FOO_NO_WHITESPACE="$(echo -e "${FOO}" | tr -d '[:space:]')"
   echo -e ${FOO_NO_WHITESPACE}>>translations.js
-done< Book3.csv
+done< Book6.csv

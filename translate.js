@@ -25,6 +25,15 @@ chrome.storage.sync.get('color', function(data) {
   else if(data.color == "#e8453c"){
     translate(eToC3);
   }
+  else if (data.color == '#3aa756'){
+    translate(eToF1);
+  }
+  else if (data.color == '#f9bb2c'){
+    translate(eToF2);
+  }
+  else if (data.color == '#e8453b'){
+    translate(eToF3);
+  }
 
 });
 
