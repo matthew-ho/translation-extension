@@ -2,7 +2,10 @@
   "name": "TranslationScatter",
   "version": "1.0",
   "description": "Translates specific words in a page",
-  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "permissions": ["activeTab", "declarativeContent", "storage", "contextMenus", "tabs"],
+	"background": {
+    "scripts": ["rightclick.js"]
+  },
 	"content_scripts": [{
     "js": ["findAndReplaceDOMText.js", "translate.js"],
     "matches": ["<all_urls>"]
