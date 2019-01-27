@@ -1,4 +1,14 @@
-var h3s = document.getElementsByTagName('h3');
-for (var i = 0, l = h3s.length; i < l; i++) {
-  h3s[i].innerHTML = "YES"
+function translate(translations) {
+  var translationsList = Object.entries(translations);
+  for (var i = 0; i < translationsList.length; i++){
+    var regex = "\\b" + translationsList[i][1] + "\\b";
+    var re = new RegExp(regex, "g");
+    findAndReplaceDOMText(document.body, {
+      find: re,
+      replace: translationsList[i][0]
+    });
+  }
 }
+
+var translations = {"狗": "dog", "狼": "wolf"};
+translate(translations);
