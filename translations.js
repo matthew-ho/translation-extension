@@ -1,4 +1,6 @@
 var cToE = {
+	"狗": "dog",
+  "狼": "wolf",
   "人":"﻿people",
   "历史":"history",
   "办法":"way",
