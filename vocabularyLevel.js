@@ -5,8 +5,8 @@
 'use strict';
 
 let page = document.getElementById('buttonDiv');
-const kButtonColors = ['#3aa757', '#f9bb2d', '#e8453c'];
-const kButtonTags = ['Easy', 'intermediate', 'advanced'];
+const kButtonColors = ['#3aa757', '#f9bb2d', '#e8453c', '#3aa756', '#f9bb2c', '#e8453b'];
+const kButtonTags = ['Easy(CH)', 'intermediate(CH)', 'advanced(CH)', 'Easy(FR)', 'intermediate(FR)', 'advanced(FR)'];
 
 function constructOptions(kButtonColors, kButtonTags) {
   let i = 0;
