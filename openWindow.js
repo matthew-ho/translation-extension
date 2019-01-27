@@ -1,4 +1,5 @@
 document.body.addEventListener('dblclick', function(e) {
+	console.log(window.getSelection().toString().trim());
 	var translation = cToE[window.getSelection().toString().trim()];
 	console.log(translation);
 	console.log(e.clientX);
@@ -10,6 +11,7 @@ document.body.addEventListener('dblclick', function(e) {
 		console.log(clickY);
 		var translationWindowHTML = '<translationWindow style="top: ' + clickY + 'px; left: ' + clickX + 'px;"'+ '>';
 		translationWindowHTML += '<p>' + translation + '</p>';
+		translationWindowHTML += '<a href="https://dictionary.cambridge.org/dictionary/english-chinese-simplified/' + translation + '">uses</a>';
 		translationWindowHTML += '</translationWindow>';
 
 		document.body.innerHTML += translationWindowHTML;
