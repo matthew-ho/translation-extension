@@ -4,7 +4,7 @@
   "description": "Translates specific words in a page",
   "permissions": ["activeTab", "declarativeContent", "storage"],
 	"content_scripts": [{
-    "js": ["translations.js", "findAndReplaceDOMText.js", "translate.js"],
+    "js": ["translations.js", "findAndReplaceDOMText.js", "translate.js", "openWindow.js"],
     "matches": ["<all_urls>"]
   }],
   "manifest_version": 2

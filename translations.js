@@ -1,4 +1,6 @@
 var cToE = {
+  "狗": "dog",
+  "狼": "wolf",
   "人": "people",
   "历史":"history",
   "办法":"way",
@@ -188,6 +190,8 @@ var cToE = {
 };
 
 var eToC={
+  "dog": "狗",
+  "wolf": "狼",
   "people":"人",
   "history":"历史",
   "way":"办法",
