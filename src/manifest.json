@@ -1,0 +1,22 @@
+{
+  "name": "Translatorly",
+  "version": "1.0",
+  "description": "Translates specific words in a page",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "options_page": "options/vocabularyLevel.html",
+	"content_scripts": [{
+		"css": ["content_scripts/openWindow.css"],
+    "js": [
+			"content_scripts/translations.js",
+			"content_scripts/findAndReplaceDOMText.js",
+			"content_scripts/translate.js",
+			"content_scripts/openWindow.js"
+		],
+    "matches": ["<all_urls>"]
+  }],
+  "background": {
+    "scripts": ["background/background.js"],
+    "persistent": false
+  },
+  "manifest_version": 2
+}
